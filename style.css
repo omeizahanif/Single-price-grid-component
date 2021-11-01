@@ -79,7 +79,6 @@ h1 {
     width: 100%;
     display: block;
     padding: 1rem;
-    margin-top: 2rem;
     text-align: center;
     border-radius: 5px;
     text-decoration: none;
@@ -91,8 +90,8 @@ h1 {
 .cta:focus, .cta:hover {
     background-color: hsl(71, 63%, 48%);
     -webkit-box-shadow: unset;
--moz-box-shadow: unset;
-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
 }
 
 .price-container,
@@ -103,9 +102,6 @@ box-shadow: unset;
     padding: 0;
 }
 
-/*.price-container {
-    flex: 0 1 auto;
-}*/
 
 .hero-section,
 .price-col-1,
@@ -121,6 +117,9 @@ box-shadow: unset;
 .price-col-1 {
     background-color: var(--cyan);
     color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .price-col-2 {
