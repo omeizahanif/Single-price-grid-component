@@ -48,13 +48,19 @@ h1 {
     margin: 0;
 }
 
-
 .price-tag {
-    color: var(--light-gray);
+    display: flex;
+    align-items: center;
+}
+
+.price-tag p {
+    opacity: .5;
 }
 
 .price-tag span {
     font-size: 2rem;
+    margin-right: .5rem;
+    color: #FFFFFF;
 }
 
 .benefits-list {
@@ -77,6 +83,16 @@ h1 {
     text-align: center;
     border-radius: 5px;
     text-decoration: none;
+    -webkit-box-shadow: 2px 18px 33px -11px rgba(176,181,191,1);
+    -moz-box-shadow: 2px 18px 33px -11px rgba(176,181,191,1);
+    box-shadow: 2px 18px 33px -11px rgba(176,181,191,1);
+}
+
+.cta:focus, .cta:hover {
+    background-color: hsl(71, 63%, 48%);
+    -webkit-box-shadow: unset;
+-moz-box-shadow: unset;
+box-shadow: unset;
 }
 
 .price-container,
@@ -87,9 +103,9 @@ h1 {
     padding: 0;
 }
 
-.price-container {
-    min-width: 26vw;
-}
+/*.price-container {
+    flex: 0 1 auto;
+}*/
 
 .hero-section,
 .price-col-1,
@@ -111,7 +127,43 @@ h1 {
     background-color: hsl(179, 54%, 51%);
 }
 
+@media only screen and (min-width: 550px) {
 
+    .content-section {
+        flex-direction: row;
+    }
+
+    .hero-section,
+    .price-col-1,
+    .price-col-2 {
+        padding: 2rem;
+    }
+
+    .content-title,
+    .benefits-title {
+        font-size: 1.2rem;    
+    }
+
+
+}
+
+@media only screen and (min-width: 650px) {
+    .price-container {
+        max-width: 80vw;
+    }
+
+    .hero-section,
+    .price-col-1,
+    .price-col-2 {
+        padding: 3rem;
+    }
+
+    .hero-info {
+        max-width: 650px;
+    }
+
+    
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
