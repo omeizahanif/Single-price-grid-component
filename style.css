@@ -14,13 +14,102 @@
 body {
     font-family: 'Karla', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--light-gray);
 }
 
+h1 {
+    font-weight: 700;
+}
+
+.hero-title {
+    color: var(--cyan);
+}
+
+.hero-guarantee {
+    color: var(--bright-yellow);
+    font-size: 1.2rem;
+}
+
+.hero-info {
+    color: var(--grayish-blue);
+    line-height: 2em;
+    
+}
+
+.content-title,
+.benefits-title {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+
+.price-tag {
+    color: var(--light-gray);
+}
+
+.price-tag span {
+    font-size: 2rem;
+}
+
+.benefits-list {
+    padding: 0;
+}
+
+.benefits-list li {
+    color: var(--light-gray);
+    list-style-type: none;
+    margin-bottom: .5rem;
+}
+
+.cta {
+    color: #FFFFFF;
+    background-color: var(--bright-yellow);
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.price-container,
+.hero-section,
+.content-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.price-container {
+    min-width: 26vw;
+}
+
+.hero-section,
+.price-col-1,
+.price-col-2 {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.hero-section {
+    background-color: #fff;
+}
+
+.price-col-1 {
+    background-color: var(--cyan);
+    color: var(--light-gray);
+}
+
+.price-col-2 {
+    background-color: hsl(179, 54%, 51%);
+}
 
 
 
